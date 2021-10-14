@@ -1,0 +1,22 @@
+---
+title: "Assignment 1"
+author: "Hannah Levit"
+date: "14/10/2021"
+output: pdf_document
+---
+
+Hannah Levit
+**University of British Columbia**
+*Yellow*
+
+```{r}
+install.packages("here")
+library(here)
+
+x = c(1,2,3)
+y = c(3,4,5)
+
+student_data = data.frame(x,y)
+
+write.csv(student_data, here("./data/student_data.csv"))
+```
